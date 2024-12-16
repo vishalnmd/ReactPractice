@@ -58,6 +58,17 @@ const Navbar = () => {
           </NavLink>
         </li>
 
+         <li>
+          <NavLink
+            to="/stopwatch"
+            className={({ isActive }) =>
+              isActive ? 'text-white font-bold' : 'text-gray-400'
+            }
+          >
+            Stopwatch
+          </NavLink>
+        </li> 
+
       </ul>
     </nav>
   );

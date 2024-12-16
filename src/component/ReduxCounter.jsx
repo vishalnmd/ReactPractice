@@ -16,10 +16,10 @@ export default function ReduxCounter() {
   return (
     <>
       <div style={{ textAlign: "center", marginTop: "50px" }}>
-        <h1>Counter: {count}</h1>
-        <button onClick={() => dispatcher(increament())}>Increment</button>
-        <button onClick={() => dispatcher(decrement())}>Decrement</button>
-        <button onClick={() => dispatcher(reset())}>Reset</button>        
+        <h1 className="my-2">Counter: {count}</h1>
+        <button className="m-1" onClick={() => dispatcher(increament())}>Increment</button>
+        <button className="m-1" onClick={() => dispatcher(decrement())}>Decrement</button>
+        <button className="m-1" onClick={() => dispatcher(reset())}>Reset</button>        
         <div>
             <br />
             <input

@@ -13,6 +13,7 @@ import Navbar from './component/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Form from './component/Form'
 import ReduxCounter from './component/ReduxCounter'
+import Stopwatch from './component/Stopwatch'
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           }/>
           <Route path='/form' element={<Form/>}/>
           <Route path='/redux' element={<ReduxCounter/>}/>
+          <Route path='/stopwatch' element={<Stopwatch/>}/>
           <Route path='*' element={<CardList/>}/>
         </Routes>
         
