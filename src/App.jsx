@@ -14,6 +14,7 @@ import { Route, Routes } from 'react-router-dom'
 import Form from './component/Form'
 import ReduxCounter from './component/ReduxCounter'
 import Stopwatch from './component/Stopwatch'
+import Memo from './component/Memo'
 
 function App() {
 
@@ -40,7 +41,8 @@ function App() {
                 <UseEffectImpl></UseEffectImpl>
                 <Temp></Temp>
                 <EventTest></EventTest>                
-                <Parent></Parent>
+                <Parent></Parent>        
+                <Memo></Memo>      
             </>
           }/>
           <Route path='/form' element={<Form/>}/>
