@@ -15,6 +15,7 @@ import Form from './component/Form'
 import ReduxCounter from './component/ReduxCounter'
 import Stopwatch from './component/Stopwatch'
 import Memo from './component/Memo'
+import UseCallback from './component/UseCallback'
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/form' element={<Form/>}/>
           <Route path='/redux' element={<ReduxCounter/>}/>
           <Route path='/stopwatch' element={<Stopwatch/>}/>
+          <Route path='/callback' element={<UseCallback/>}/>
           <Route path='*' element={<CardList/>}/>
         </Routes>
         
