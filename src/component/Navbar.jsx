@@ -80,6 +80,17 @@ const Navbar = () => {
           </NavLink>
         </li> 
 
+        <li>
+          <NavLink
+            to="/axios"
+            className={({ isActive }) =>
+              isActive ? 'text-white font-bold' : 'text-gray-400'
+            }
+          >
+            Axios
+          </NavLink>
+        </li> 
+
       </ul>
     </nav>
   );
