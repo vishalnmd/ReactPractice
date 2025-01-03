@@ -11,7 +11,7 @@ export default function UseCallback() {
            <h2 className="p-2">Counter is : {count}</h2>
            <button onClick={()=>setCount(count+1)}>Increment</button>
 
-           <ChildCallback/>
+           <ChildCallback count={count}/>
         </div>
     );
 }

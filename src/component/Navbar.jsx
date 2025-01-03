@@ -76,7 +76,7 @@ const Navbar = () => {
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
           >
-            Stopwatch
+            Callback
           </NavLink>
         </li> 
 
