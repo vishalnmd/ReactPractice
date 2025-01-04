@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vishalnmd.github.io/ReactPractice",
+  "homepage": "https://vishalnmd.github.io/ReactPractice/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
