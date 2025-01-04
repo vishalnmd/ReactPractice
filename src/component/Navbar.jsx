@@ -44,6 +44,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
+            onClick={()=>setIsMenuOpen(false)}
           >
             Cards
           </NavLink>
@@ -54,6 +55,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
+            onClick={()=>setIsMenuOpen(false)}
           >
             Clock
           </NavLink>
@@ -64,6 +66,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
+            onClick={()=>setIsMenuOpen(false)}
           >
             Others
           </NavLink>
@@ -74,6 +77,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
+            onClick={()=>setIsMenuOpen(false)}
           >
             Forms
           </NavLink>
@@ -84,6 +88,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
+            onClick={()=>setIsMenuOpen(false)}
           >
             Redux
           </NavLink>
@@ -94,6 +99,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
+            onClick={()=>setIsMenuOpen(false)}
           >
             Stopwatch
           </NavLink>
@@ -104,6 +110,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
             }
+            onClick={()=>setIsMenuOpen(false)}
           >
             Callback
           </NavLink>
@@ -113,7 +120,7 @@ const Navbar = () => {
             to="/axios"
             className={({ isActive }) =>
               isActive ? 'text-white font-bold' : 'text-gray-400'
-            }
+            }onClick={()=>setIsMenuOpen(false)}        
           >
             Axios
           </NavLink>
