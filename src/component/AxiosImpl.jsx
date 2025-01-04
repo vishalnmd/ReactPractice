@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import Movies from "./MoviesLst";
 import MoviesLst from "./MoviesLst";
+import Temp2 from "./Temp2";
 
 export default function AxiosImpl (){
 
@@ -33,7 +34,7 @@ export default function AxiosImpl (){
     }
 
     return (
-        <>
+        <>              
             <div className="flex flex-col items-center min-h-screen w-screen gap-5 bg-gray-700" >
                 <div className="mt-4">
                     <button className="w-24 h-9 p-2 m-1 hover:bg-[#1a1a2e]" onClick={fetchMovies}> fetch </button>

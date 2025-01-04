@@ -1,10 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="bg-gray-800 p-4">
-      <ul className="flex space-x-4">
+      {/* Header Section */}
+      <div className="flex md:inline-flex justify-between items-center">
+        <div className="mr-4 text-white text-lg font-bold">My App</div>
+
+        {/* Hamburger Menu for Small Screens */}
+        <button
+          className="text-white md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Links Section */}
+      <ul
+        className={`${
+          isMenuOpen ? 'block' : 'hidden'
+        } md:inline-flex md:space-x-4 mt-4 md:mt-0`}
+      >
         <li>
           <NavLink
             to="/"
@@ -35,7 +68,6 @@ const Navbar = () => {
             Others
           </NavLink>
         </li>
-        
         <li>
           <NavLink
             to="/form"
@@ -46,7 +78,6 @@ const Navbar = () => {
             Forms
           </NavLink>
         </li>
-        
         <li>
           <NavLink
             to="/redux"
@@ -57,7 +88,6 @@ const Navbar = () => {
             Redux
           </NavLink>
         </li>
-
         <li>
           <NavLink
             to="/stopwatch"
@@ -67,8 +97,7 @@ const Navbar = () => {
           >
             Stopwatch
           </NavLink>
-        </li> 
-
+        </li>
         <li>
           <NavLink
             to="/callback"
@@ -78,8 +107,7 @@ const Navbar = () => {
           >
             Callback
           </NavLink>
-        </li> 
-
+        </li>
         <li>
           <NavLink
             to="/axios"
@@ -89,8 +117,7 @@ const Navbar = () => {
           >
             Axios
           </NavLink>
-        </li> 
-
+        </li>
       </ul>
     </nav>
   );
