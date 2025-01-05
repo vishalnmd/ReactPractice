@@ -7,7 +7,7 @@ import Temp2 from "./Temp2";
 export default function AxiosImpl (){
 
     // const api = "https://dummyapi.online/api/movies";
-    const api = "http://www.omdbapi.com/?apikey=57f4c435&s=black";
+    const api = "https://www.omdbapi.com/?apikey=57f4c435&s=black";
 
     const [movies,setMovies] = useState([]);
 
